@@ -1,0 +1,13 @@
+<RCC>
+  <qresource>
+    <file>images/bar.png</file>
+    <file>images/delta_P.png</file>
+    <file>images/f_laminar.png</file>
+    <file>images/f_turbulent.png</file>
+    <file>images/h_L.png</file>
+    <file>images/L_f.png</file>
+    <file>images/L_TEL.png</file>
+    <file>images/Re.png</file>
+    <file>images/Vel.png</file>
+  </qresource>
+</RCC>
