@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'mainwindow.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.7.0
+## Created by: Qt User Interface Compiler version 6.2.4
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -20,12 +20,13 @@ from PySide6.QtWidgets import (QApplication, QGridLayout, QGroupBox, QHBoxLayout
     QMenuBar, QPushButton, QScrollArea, QSizePolicy,
     QSpacerItem, QStatusBar, QTabWidget, QTableWidget,
     QTableWidgetItem, QVBoxLayout, QWidget)
+import resource_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(964, 746)
+        MainWindow.resize(1010, 1227)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout_10 = QVBoxLayout(self.centralwidget)
@@ -43,14 +44,14 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_3 = QWidget()
         self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, -713, 906, 1350))
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, -206, 952, 1350))
         self.gridLayout = QGridLayout(self.scrollAreaWidgetContents_3)
         self.gridLayout.setObjectName(u"gridLayout")
         self.verticalLayout_13 = QVBoxLayout()
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
         self.groupBox = QGroupBox(self.scrollAreaWidgetContents_3)
         self.groupBox.setObjectName(u"groupBox")
-        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
+        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.groupBox.sizePolicy().hasHeightForWidth())
@@ -107,7 +108,7 @@ class Ui_MainWindow(object):
 
         self.line_description = QLineEdit(self.groupBox)
         self.line_description.setObjectName(u"line_description")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy1 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
         sizePolicy1.setHorizontalStretch(0)
         sizePolicy1.setVerticalStretch(0)
         sizePolicy1.setHeightForWidth(self.line_description.sizePolicy().hasHeightForWidth())
@@ -380,7 +381,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_7.addWidget(self.label_26)
 
-        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_7.addItem(self.horizontalSpacer)
 
@@ -410,13 +411,13 @@ class Ui_MainWindow(object):
         self.gridLayout_7.setObjectName(u"gridLayout_7")
         self.label_36 = QLabel(self.groupBox_2)
         self.label_36.setObjectName(u"label_36")
-        self.label_36.setPixmap(QPixmap(u"images/f_laminar.png"))
+        self.label_36.setPixmap(QPixmap(u":/images/f_laminar.png"))
 
         self.gridLayout_7.addWidget(self.label_36, 4, 2, 1, 1)
 
         self.label_35 = QLabel(self.groupBox_2)
         self.label_35.setObjectName(u"label_35")
-        self.label_35.setPixmap(QPixmap(u"images/f_turbulent.png"))
+        self.label_35.setPixmap(QPixmap(u":/images/f_turbulent.png"))
 
         self.gridLayout_7.addWidget(self.label_35, 3, 2, 1, 1)
 
@@ -427,7 +428,7 @@ class Ui_MainWindow(object):
 
         self.label_34 = QLabel(self.groupBox_2)
         self.label_34.setObjectName(u"label_34")
-        self.label_34.setPixmap(QPixmap(u"images/Re.png"))
+        self.label_34.setPixmap(QPixmap(u":/images/Re.png"))
 
         self.gridLayout_7.addWidget(self.label_34, 1, 2, 1, 1)
 
@@ -445,7 +446,7 @@ class Ui_MainWindow(object):
 
         self.gridLayout_7.addWidget(self.label_31, 3, 1, 1, 1)
 
-        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
 
         self.gridLayout_7.addItem(self.horizontalSpacer_3, 4, 0, 1, 1)
 
@@ -463,7 +464,7 @@ class Ui_MainWindow(object):
 
         self.gridLayout_7.addWidget(self.label_28, 0, 0, 1, 2)
 
-        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
 
         self.gridLayout_7.addItem(self.horizontalSpacer_2, 3, 0, 1, 1)
 
@@ -493,7 +494,7 @@ class Ui_MainWindow(object):
 
         self.label_33 = QLabel(self.groupBox_2)
         self.label_33.setObjectName(u"label_33")
-        self.label_33.setPixmap(QPixmap(u"images/Vel.png"))
+        self.label_33.setPixmap(QPixmap(u":/images/Vel.png"))
 
         self.gridLayout_7.addWidget(self.label_33, 0, 2, 1, 1)
 
@@ -559,7 +560,7 @@ class Ui_MainWindow(object):
         __qtablewidgetitem10 = QTableWidgetItem()
         self.table_fittings.setItem(1, 2, __qtablewidgetitem10)
         self.table_fittings.setObjectName(u"table_fittings")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
         sizePolicy2.setHorizontalStretch(0)
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.table_fittings.sizePolicy().hasHeightForWidth())
@@ -575,7 +576,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4 = QHBoxLayout()
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.horizontalSpacer_4 = QSpacerItem(320, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+        self.horizontalSpacer_4 = QSpacerItem(320, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
 
         self.horizontalLayout_4.addItem(self.horizontalSpacer_4)
 
@@ -669,7 +670,7 @@ class Ui_MainWindow(object):
 
         self.label_49 = QLabel(self.groupBox_3)
         self.label_49.setObjectName(u"label_49")
-        self.label_49.setPixmap(QPixmap(u"images/L_TEL.png"))
+        self.label_49.setPixmap(QPixmap(u":/images/L_TEL.png"))
 
         self.gridLayout_4.addWidget(self.label_49, 2, 1, 1, 1)
 
@@ -724,7 +725,7 @@ class Ui_MainWindow(object):
 
         self.label_51 = QLabel(self.groupBox_3)
         self.label_51.setObjectName(u"label_51")
-        self.label_51.setPixmap(QPixmap(u"images/delta_P.png"))
+        self.label_51.setPixmap(QPixmap(u":/images/delta_P.png"))
 
         self.gridLayout_4.addWidget(self.label_51, 4, 1, 1, 1)
 
@@ -753,7 +754,7 @@ class Ui_MainWindow(object):
 
         self.label_52 = QLabel(self.groupBox_3)
         self.label_52.setObjectName(u"label_52")
-        self.label_52.setPixmap(QPixmap(u"images/bar.png"))
+        self.label_52.setPixmap(QPixmap(u":/images/bar.png"))
 
         self.gridLayout_4.addWidget(self.label_52, 5, 1, 1, 1)
 
@@ -779,13 +780,13 @@ class Ui_MainWindow(object):
 
         self.label_47 = QLabel(self.groupBox_3)
         self.label_47.setObjectName(u"label_47")
-        self.label_47.setPixmap(QPixmap(u"images/L_f.png"))
+        self.label_47.setPixmap(QPixmap(u":/images/L_f.png"))
 
         self.gridLayout_4.addWidget(self.label_47, 0, 1, 1, 1)
 
         self.label_50 = QLabel(self.groupBox_3)
         self.label_50.setObjectName(u"label_50")
-        self.label_50.setPixmap(QPixmap(u"images/h_L.png"))
+        self.label_50.setPixmap(QPixmap(u":/images/h_L.png"))
 
         self.gridLayout_4.addWidget(self.label_50, 3, 1, 1, 1)
 
@@ -854,7 +855,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 964, 19))
+        self.menubar.setGeometry(QRect(0, 0, 1010, 19))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
