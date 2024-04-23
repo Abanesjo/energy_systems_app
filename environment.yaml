@@ -1,0 +1,19 @@
+name: energy_systems
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.13
+  - pip=23.2.1
+  - ipywidgets
+  - openpyxl
+  - ipykernel
+  - pyside6
+  - pip:
+      - numpy
+      - pandas
+      - matplotlib
+      - pyXSteam
+      - fluids
+      - sigfig
+      - pillow
+      - pyqt6-tools 

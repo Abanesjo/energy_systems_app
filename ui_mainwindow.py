@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'mainwindow.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.2.4
+## Created by: Qt User Interface Compiler version 6.7.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(989, 1349)
+        MainWindow.resize(964, 746)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout_10 = QVBoxLayout(self.centralwidget)
@@ -43,14 +43,14 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_3 = QWidget()
         self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 931, 1318))
-        self.horizontalLayout_8 = QHBoxLayout(self.scrollAreaWidgetContents_3)
-        self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, -713, 906, 1350))
+        self.gridLayout = QGridLayout(self.scrollAreaWidgetContents_3)
+        self.gridLayout.setObjectName(u"gridLayout")
         self.verticalLayout_13 = QVBoxLayout()
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
         self.groupBox = QGroupBox(self.scrollAreaWidgetContents_3)
         self.groupBox.setObjectName(u"groupBox")
-        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.groupBox.sizePolicy().hasHeightForWidth())
@@ -107,7 +107,7 @@ class Ui_MainWindow(object):
 
         self.line_description = QLineEdit(self.groupBox)
         self.line_description.setObjectName(u"line_description")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
         sizePolicy1.setHorizontalStretch(0)
         sizePolicy1.setVerticalStretch(0)
         sizePolicy1.setHeightForWidth(self.line_description.sizePolicy().hasHeightForWidth())
@@ -122,6 +122,10 @@ class Ui_MainWindow(object):
 
         self.D = QLineEdit(self.groupBox)
         self.D.setObjectName(u"D")
+        self.D.setStyleSheet(u"QLineEdit {\n"
+"	background: rgb(223, 223, 223)\n"
+"}")
+        self.D.setReadOnly(True)
 
         self.gridLayout_6.addWidget(self.D, 3, 3, 1, 1)
 
@@ -146,10 +150,10 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_13.addWidget(self.groupBox)
 
-        self.tabWidget = QTabWidget(self.scrollAreaWidgetContents_3)
-        self.tabWidget.setObjectName(u"tabWidget")
-        sizePolicy1.setHeightForWidth(self.tabWidget.sizePolicy().hasHeightForWidth())
-        self.tabWidget.setSizePolicy(sizePolicy1)
+        self.tab_fluid_properties = QTabWidget(self.scrollAreaWidgetContents_3)
+        self.tab_fluid_properties.setObjectName(u"tab_fluid_properties")
+        sizePolicy1.setHeightForWidth(self.tab_fluid_properties.sizePolicy().hasHeightForWidth())
+        self.tab_fluid_properties.setSizePolicy(sizePolicy1)
         self.tab = QWidget()
         self.tab.setObjectName(u"tab")
         self.verticalLayout = QVBoxLayout(self.tab)
@@ -165,6 +169,21 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.gridLayout_2 = QGridLayout()
         self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.label_12 = QLabel(self.verticalGroupBox)
+        self.label_12.setObjectName(u"label_12")
+
+        self.gridLayout_2.addWidget(self.label_12, 1, 1, 1, 1)
+
+        self.line_edit_source_h = QLineEdit(self.verticalGroupBox)
+        self.line_edit_source_h.setObjectName(u"line_edit_source_h")
+
+        self.gridLayout_2.addWidget(self.line_edit_source_h, 1, 2, 1, 1)
+
+        self.line_edit_source_p = QLineEdit(self.verticalGroupBox)
+        self.line_edit_source_p.setObjectName(u"line_edit_source_p")
+
+        self.gridLayout_2.addWidget(self.line_edit_source_p, 0, 0, 1, 1)
+
         self.label_14 = QLabel(self.verticalGroupBox)
         self.label_14.setObjectName(u"label_14")
 
@@ -175,35 +194,20 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2.addWidget(self.line_edit_source_q, 1, 0, 1, 1)
 
-        self.line_edit_source_p = QLineEdit(self.verticalGroupBox)
-        self.line_edit_source_p.setObjectName(u"line_edit_source_p")
-
-        self.gridLayout_2.addWidget(self.line_edit_source_p, 0, 0, 1, 1)
-
         self.label_13 = QLabel(self.verticalGroupBox)
         self.label_13.setObjectName(u"label_13")
 
         self.gridLayout_2.addWidget(self.label_13, 0, 1, 1, 1)
 
-        self.label_12 = QLabel(self.verticalGroupBox)
-        self.label_12.setObjectName(u"label_12")
+        self.label_11 = QLabel(self.verticalGroupBox)
+        self.label_11.setObjectName(u"label_11")
 
-        self.gridLayout_2.addWidget(self.label_12, 1, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.label_11, 1, 3, 1, 1)
 
         self.line_edit_source_t = QLineEdit(self.verticalGroupBox)
         self.line_edit_source_t.setObjectName(u"line_edit_source_t")
 
         self.gridLayout_2.addWidget(self.line_edit_source_t, 0, 2, 1, 1)
-
-        self.line_edit_source_h = QLineEdit(self.verticalGroupBox)
-        self.line_edit_source_h.setObjectName(u"line_edit_source_h")
-
-        self.gridLayout_2.addWidget(self.line_edit_source_h, 1, 2, 1, 1)
-
-        self.label_11 = QLabel(self.verticalGroupBox)
-        self.label_11.setObjectName(u"label_11")
-
-        self.gridLayout_2.addWidget(self.label_11, 1, 3, 1, 1)
 
 
         self.verticalLayout_4.addLayout(self.gridLayout_2)
@@ -275,7 +279,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addLayout(self.horizontalLayout_5)
 
-        self.tabWidget.addTab(self.tab, "")
+        self.tab_fluid_properties.addTab(self.tab, "")
         self.tab_2 = QWidget()
         self.tab_2.setObjectName(u"tab_2")
         self.verticalLayout_3 = QVBoxLayout(self.tab_2)
@@ -289,10 +293,10 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.label_5)
 
-        self.lineEdit_5 = QLineEdit(self.tab_2)
-        self.lineEdit_5.setObjectName(u"lineEdit_5")
+        self.line_edit_p_avg = QLineEdit(self.tab_2)
+        self.line_edit_p_avg.setObjectName(u"line_edit_p_avg")
 
-        self.horizontalLayout_3.addWidget(self.lineEdit_5)
+        self.horizontalLayout_3.addWidget(self.line_edit_p_avg)
 
         self.label_8 = QLabel(self.tab_2)
         self.label_8.setObjectName(u"label_8")
@@ -309,10 +313,10 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2.addWidget(self.label_6)
 
-        self.lineEdit_6 = QLineEdit(self.tab_2)
-        self.lineEdit_6.setObjectName(u"lineEdit_6")
+        self.line_edit_t_avg = QLineEdit(self.tab_2)
+        self.line_edit_t_avg.setObjectName(u"line_edit_t_avg")
 
-        self.horizontalLayout_2.addWidget(self.lineEdit_6)
+        self.horizontalLayout_2.addWidget(self.line_edit_t_avg)
 
         self.label_9 = QLabel(self.tab_2)
         self.label_9.setObjectName(u"label_9")
@@ -329,10 +333,10 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout.addWidget(self.label_7)
 
-        self.lineEdit_7 = QLineEdit(self.tab_2)
-        self.lineEdit_7.setObjectName(u"lineEdit_7")
+        self.line_edit_q = QLineEdit(self.tab_2)
+        self.line_edit_q.setObjectName(u"line_edit_q")
 
-        self.horizontalLayout.addWidget(self.lineEdit_7)
+        self.horizontalLayout.addWidget(self.line_edit_q)
 
         self.label_10 = QLabel(self.tab_2)
         self.label_10.setObjectName(u"label_10")
@@ -345,9 +349,9 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_3.addLayout(self.verticalLayout_2)
 
-        self.tabWidget.addTab(self.tab_2, "")
+        self.tab_fluid_properties.addTab(self.tab_2, "")
 
-        self.verticalLayout_13.addWidget(self.tabWidget)
+        self.verticalLayout_13.addWidget(self.tab_fluid_properties)
 
         self.groupBox_2 = QGroupBox(self.scrollAreaWidgetContents_3)
         self.groupBox_2.setObjectName(u"groupBox_2")
@@ -376,7 +380,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_7.addWidget(self.label_26)
 
-        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.horizontalLayout_7.addItem(self.horizontalSpacer)
 
@@ -441,7 +445,7 @@ class Ui_MainWindow(object):
 
         self.gridLayout_7.addWidget(self.label_31, 3, 1, 1, 1)
 
-        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.gridLayout_7.addItem(self.horizontalSpacer_3, 4, 0, 1, 1)
 
@@ -459,7 +463,7 @@ class Ui_MainWindow(object):
 
         self.gridLayout_7.addWidget(self.label_28, 0, 0, 1, 2)
 
-        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.gridLayout_7.addItem(self.horizontalSpacer_2, 3, 0, 1, 1)
 
@@ -525,30 +529,37 @@ class Ui_MainWindow(object):
         self.groupBox_4 = QGroupBox(self.scrollAreaWidgetContents_3)
         self.groupBox_4.setObjectName(u"groupBox_4")
         self.groupBox_4.setAlignment(Qt.AlignCenter)
-
-        self.verticalLayout_13.addWidget(self.groupBox_4)
-
-        self.table_fittings = QTableWidget(self.scrollAreaWidgetContents_3)
-        if (self.table_fittings.columnCount() < 4):
-            self.table_fittings.setColumnCount(4)
+        self.verticalLayout_14 = QVBoxLayout(self.groupBox_4)
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.table_fittings = QTableWidget(self.groupBox_4)
+        if (self.table_fittings.columnCount() < 3):
+            self.table_fittings.setColumnCount(3)
         __qtablewidgetitem = QTableWidgetItem()
         self.table_fittings.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
         self.table_fittings.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         __qtablewidgetitem2 = QTableWidgetItem()
         self.table_fittings.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        if (self.table_fittings.rowCount() < 2):
+            self.table_fittings.setRowCount(2)
         __qtablewidgetitem3 = QTableWidgetItem()
-        self.table_fittings.setHorizontalHeaderItem(3, __qtablewidgetitem3)
-        if (self.table_fittings.rowCount() < 3):
-            self.table_fittings.setRowCount(3)
+        self.table_fittings.setVerticalHeaderItem(0, __qtablewidgetitem3)
         __qtablewidgetitem4 = QTableWidgetItem()
-        self.table_fittings.setVerticalHeaderItem(0, __qtablewidgetitem4)
+        self.table_fittings.setVerticalHeaderItem(1, __qtablewidgetitem4)
         __qtablewidgetitem5 = QTableWidgetItem()
-        self.table_fittings.setVerticalHeaderItem(1, __qtablewidgetitem5)
+        self.table_fittings.setItem(0, 0, __qtablewidgetitem5)
         __qtablewidgetitem6 = QTableWidgetItem()
-        self.table_fittings.setVerticalHeaderItem(2, __qtablewidgetitem6)
+        self.table_fittings.setItem(0, 1, __qtablewidgetitem6)
+        __qtablewidgetitem7 = QTableWidgetItem()
+        self.table_fittings.setItem(0, 2, __qtablewidgetitem7)
+        __qtablewidgetitem8 = QTableWidgetItem()
+        self.table_fittings.setItem(1, 0, __qtablewidgetitem8)
+        __qtablewidgetitem9 = QTableWidgetItem()
+        self.table_fittings.setItem(1, 1, __qtablewidgetitem9)
+        __qtablewidgetitem10 = QTableWidgetItem()
+        self.table_fittings.setItem(1, 2, __qtablewidgetitem10)
         self.table_fittings.setObjectName(u"table_fittings")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
         sizePolicy2.setHorizontalStretch(0)
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.table_fittings.sizePolicy().hasHeightForWidth())
@@ -560,52 +571,52 @@ class Ui_MainWindow(object):
         self.table_fittings.horizontalHeader().setStretchLastSection(False)
         self.table_fittings.verticalHeader().setStretchLastSection(False)
 
-        self.verticalLayout_13.addWidget(self.table_fittings)
+        self.verticalLayout_14.addWidget(self.table_fittings)
 
         self.horizontalLayout_4 = QHBoxLayout()
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.horizontalSpacer_4 = QSpacerItem(400, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+        self.horizontalSpacer_4 = QSpacerItem(320, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.horizontalLayout_4.addItem(self.horizontalSpacer_4)
 
-        self.button_add_row = QPushButton(self.scrollAreaWidgetContents_3)
+        self.button_add_row = QPushButton(self.groupBox_4)
         self.button_add_row.setObjectName(u"button_add_row")
 
         self.horizontalLayout_4.addWidget(self.button_add_row)
 
-        self.button_remove_row = QPushButton(self.scrollAreaWidgetContents_3)
+        self.button_remove_row = QPushButton(self.groupBox_4)
         self.button_remove_row.setObjectName(u"button_remove_row")
 
         self.horizontalLayout_4.addWidget(self.button_remove_row)
 
-        self.button_reset_rows = QPushButton(self.scrollAreaWidgetContents_3)
+        self.button_reset_rows = QPushButton(self.groupBox_4)
         self.button_reset_rows.setObjectName(u"button_reset_rows")
 
         self.horizontalLayout_4.addWidget(self.button_reset_rows)
 
-        self.label_39 = QLabel(self.scrollAreaWidgetContents_3)
+        self.label_39 = QLabel(self.groupBox_4)
         self.label_39.setObjectName(u"label_39")
 
         self.horizontalLayout_4.addWidget(self.label_39)
 
-        self.lineEdit_25 = QLineEdit(self.scrollAreaWidgetContents_3)
-        self.lineEdit_25.setObjectName(u"lineEdit_25")
-        self.lineEdit_25.setStyleSheet(u"QLineEdit {\n"
+        self.line_edit_fittings_total = QLineEdit(self.groupBox_4)
+        self.line_edit_fittings_total.setObjectName(u"line_edit_fittings_total")
+        self.line_edit_fittings_total.setStyleSheet(u"QLineEdit {\n"
 "	background: rgb(223, 223, 223)\n"
 "}")
-        self.lineEdit_25.setReadOnly(True)
+        self.line_edit_fittings_total.setReadOnly(True)
 
-        self.horizontalLayout_4.addWidget(self.lineEdit_25)
+        self.horizontalLayout_4.addWidget(self.line_edit_fittings_total)
 
 
-        self.verticalLayout_13.addLayout(self.horizontalLayout_4)
+        self.verticalLayout_14.addLayout(self.horizontalLayout_4)
 
-        self.button_calculate = QPushButton(self.scrollAreaWidgetContents_3)
-        self.button_calculate.setObjectName(u"button_calculate")
+        self.button_pipe_calculate = QPushButton(self.groupBox_4)
+        self.button_pipe_calculate.setObjectName(u"button_pipe_calculate")
 
-        self.verticalLayout_13.addWidget(self.button_calculate)
+        self.verticalLayout_14.addWidget(self.button_pipe_calculate)
 
-        self.groupBox_3 = QGroupBox(self.scrollAreaWidgetContents_3)
+        self.groupBox_3 = QGroupBox(self.groupBox_4)
         self.groupBox_3.setObjectName(u"groupBox_3")
         self.groupBox_3.setAlignment(Qt.AlignCenter)
         self.verticalLayout_12 = QVBoxLayout(self.groupBox_3)
@@ -809,11 +820,19 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_12.addLayout(self.gridLayout_4)
 
+        self.button_pipe_excel = QPushButton(self.groupBox_3)
+        self.button_pipe_excel.setObjectName(u"button_pipe_excel")
 
-        self.verticalLayout_13.addWidget(self.groupBox_3)
+        self.verticalLayout_12.addWidget(self.button_pipe_excel)
 
 
-        self.horizontalLayout_8.addLayout(self.verticalLayout_13)
+        self.verticalLayout_14.addWidget(self.groupBox_3)
+
+
+        self.verticalLayout_13.addWidget(self.groupBox_4)
+
+
+        self.gridLayout.addLayout(self.verticalLayout_13, 0, 0, 1, 1)
 
         self.scrollArea.setWidget(self.scrollAreaWidgetContents_3)
 
@@ -835,7 +854,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 989, 19))
+        self.menubar.setGeometry(QRect(0, 0, 964, 19))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -844,7 +863,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.tabWidget_1.setCurrentIndex(0)
-        self.tabWidget.setCurrentIndex(0)
+        self.tab_fluid_properties.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -853,8 +872,10 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.groupBox.setTitle(QCoreApplication.translate("MainWindow", u"Pipe Characteristics", None))
+        self.d.setText(QCoreApplication.translate("MainWindow", u"729", None))
         self.label_19.setText(QCoreApplication.translate("MainWindow", u"Inside Diameter (D):", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Nominal size", None))
+        self.absolute_roughness.setText(QCoreApplication.translate("MainWindow", u"0.00004572", None))
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"Line Description", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Material and Schedule", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Absolute Roughness (\u03b5)", None))
@@ -863,23 +884,26 @@ class Ui_MainWindow(object):
         self.label_22.setText(QCoreApplication.translate("MainWindow", u"mm", None))
         self.label_23.setText(QCoreApplication.translate("MainWindow", u"m", None))
         self.verticalGroupBox.setTitle(QCoreApplication.translate("MainWindow", u"Source Parameters", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"kg / hr", None))
         self.label_14.setText(QCoreApplication.translate("MainWindow", u"C", None))
         self.label_13.setText(QCoreApplication.translate("MainWindow", u"bar a", None))
-        self.label_12.setText(QCoreApplication.translate("MainWindow", u"kg / hr", None))
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"kJ / kg", None))
         self.verticalGroupBox_2.setTitle(QCoreApplication.translate("MainWindow", u"Destination Parameters", None))
         self.label_17.setText(QCoreApplication.translate("MainWindow", u"bar a", None))
         self.label_18.setText(QCoreApplication.translate("MainWindow", u"C", None))
         self.label_15.setText(QCoreApplication.translate("MainWindow", u"kJ / kg", None))
         self.label_16.setText(QCoreApplication.translate("MainWindow", u"kg / hr", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Source and Destination Mode", None))
+        self.tab_fluid_properties.setTabText(self.tab_fluid_properties.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Source and Destination Mode", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Average Pressure", None))
+        self.line_edit_p_avg.setText(QCoreApplication.translate("MainWindow", u"54.93", None))
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"bar a", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Average Temerature", None))
+        self.line_edit_t_avg.setText(QCoreApplication.translate("MainWindow", u"601", None))
         self.label_9.setText(QCoreApplication.translate("MainWindow", u"C", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Flow Rate", None))
+        self.line_edit_q.setText(QCoreApplication.translate("MainWindow", u"1574000", None))
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"kg / hr", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Average Mode", None))
+        self.tab_fluid_properties.setTabText(self.tab_fluid_properties.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Average Mode", None))
         self.groupBox_2.setTitle(QCoreApplication.translate("MainWindow", u"Fluid Properties", None))
         self.label_27.setText(QCoreApplication.translate("MainWindow", u"Specific Volume (V)", None))
         self.label_26.setText(QCoreApplication.translate("MainWindow", u"m^3 / kg", None))
@@ -903,25 +927,40 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Quantity (n)", None));
         ___qtablewidgetitem2 = self.table_fittings.horizontalHeaderItem(2)
         ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"L/D or K/f", None));
-        ___qtablewidgetitem3 = self.table_fittings.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"nL/D", None));
-        ___qtablewidgetitem4 = self.table_fittings.verticalHeaderItem(0)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"1", None));
-        ___qtablewidgetitem5 = self.table_fittings.verticalHeaderItem(1)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"2", None));
-        ___qtablewidgetitem6 = self.table_fittings.verticalHeaderItem(2)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"3", None));
+        ___qtablewidgetitem3 = self.table_fittings.verticalHeaderItem(0)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"1", None));
+        ___qtablewidgetitem4 = self.table_fittings.verticalHeaderItem(1)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"2", None));
+
+        __sortingEnabled = self.table_fittings.isSortingEnabled()
+        self.table_fittings.setSortingEnabled(False)
+        ___qtablewidgetitem5 = self.table_fittings.item(0, 0)
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"elbow long 90", None));
+        ___qtablewidgetitem6 = self.table_fittings.item(0, 1)
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"2", None));
+        ___qtablewidgetitem7 = self.table_fittings.item(0, 2)
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"30", None));
+        ___qtablewidgetitem8 = self.table_fittings.item(1, 0)
+        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"butterfly valve", None));
+        ___qtablewidgetitem9 = self.table_fittings.item(1, 1)
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"1", None));
+        ___qtablewidgetitem10 = self.table_fittings.item(1, 2)
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"25", None));
+        self.table_fittings.setSortingEnabled(__sortingEnabled)
+
         self.button_add_row.setText(QCoreApplication.translate("MainWindow", u"+", None))
         self.button_remove_row.setText(QCoreApplication.translate("MainWindow", u"-", None))
         self.button_reset_rows.setText(QCoreApplication.translate("MainWindow", u"Reset", None))
         self.label_39.setText(QCoreApplication.translate("MainWindow", u"Sum of nL/D for all fittings: ", None))
-        self.button_calculate.setText(QCoreApplication.translate("MainWindow", u"Press to Calculate", None))
+        self.button_pipe_calculate.setText(QCoreApplication.translate("MainWindow", u"Press to Calculate", None))
         self.groupBox_3.setTitle(QCoreApplication.translate("MainWindow", u"Pressure Drops", None))
         self.label_54.setText(QCoreApplication.translate("MainWindow", u"bar", None))
         self.label_42.setText(QCoreApplication.translate("MainWindow", u"Friction Head Loss (h_L):", None))
         self.label_55.setText(QCoreApplication.translate("MainWindow", u"bar", None))
+        self.line_edit_static_head_m.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.label_46.setText(QCoreApplication.translate("MainWindow", u"<b>Total Pressure Drop: </b>", None))
         self.label_61.setText(QCoreApplication.translate("MainWindow", u"m", None))
+        self.line_edit_l_p.setText(QCoreApplication.translate("MainWindow", u"100", None))
         self.label_49.setText("")
         self.label_56.setText(QCoreApplication.translate("MainWindow", u"<b>bar</b>", None))
         self.label_59.setText(QCoreApplication.translate("MainWindow", u"m", None))
@@ -939,7 +978,9 @@ class Ui_MainWindow(object):
         self.label_50.setText("")
         self.label_57.setText(QCoreApplication.translate("MainWindow", u"bar", None))
         self.label_53.setText(QCoreApplication.translate("MainWindow", u"m =", None))
+        self.line_edit_misc_m.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.label_62.setText(QCoreApplication.translate("MainWindow", u"m =", None))
+        self.button_pipe_excel.setText(QCoreApplication.translate("MainWindow", u"Export to Excel", None))
         self.tabWidget_1.setTabText(self.tabWidget_1.indexOf(self.pressure_drop), QCoreApplication.translate("MainWindow", u"Piping Pressure Drop", None))
         self.tabWidget_1.setTabText(self.tabWidget_1.indexOf(self.wall_thickness), QCoreApplication.translate("MainWindow", u"Wall Thickness", None))
         self.tabWidget_1.setTabText(self.tabWidget_1.indexOf(self.pump_sizing), QCoreApplication.translate("MainWindow", u"Pump Sizing", None))
