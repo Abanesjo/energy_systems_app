@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QMainWindow, QTableWidgetItem, QMessageBox
 from ui_mainwindow import Ui_MainWindow
 
-import pipe_sizing as ps
+from energy_systems import pipe_sizing as ps
 from pyXSteam.XSteam import XSteam
 import sigfig as sf
 import pandas as pd
@@ -53,9 +53,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             sum_resistances = []
 
             x = self.table_fittings.rowCount()
-            sum_label = QTableWidgetItem("nL/D")
-            self.table_fittings.insertColumn(3)
-            self.table_fittings.setHorizontalHeaderItem(3, sum_label)
+            if self.table_fittings.columnCount() < 4:
+                sum_label = QTableWidgetItem("nL/D")
+                self.table_fittings.insertColumn(3)
+                self.table_fittings.setHorizontalHeaderItem(3, sum_label)
 
             for i in range(x):
                     names.append(self.table_fittings.item(i, 0).text())
@@ -68,7 +69,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     sum_resistances.append(resistance * quantity)
             
             total_resistance = sum(sum_resistances)
-            self.line_edit_fittings_total.setText(str(sum_resistances))
+            self.line_edit_fittings_total.setText(str(total_resistance))
 
             fittings = pd.DataFrame()
             fittings['name'] = names
