@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1010</width>
-    <height>1227</height>
+    <width>1092</width>
+    <height>1154</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_10">
     <item>
-     <widget class="QTabWidget" name="tabWidget_1">
+     <widget class="QTabWidget" name="button_hydraulic">
       <property name="currentIndex">
        <number>0</number>
       </property>
@@ -36,8 +36,8 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>-206</y>
-               <width>952</width>
+               <y>0</y>
+               <width>1034</width>
                <height>1350</height>
               </rect>
              </property>
@@ -76,7 +76,11 @@
                       </widget>
                      </item>
                      <item row="1" column="1">
-                      <widget class="QLineEdit" name="nominal_size"/>
+                      <widget class="QLineEdit" name="nominal_size">
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
                      </item>
                      <item row="1" column="0">
                       <widget class="QLabel" name="label">
@@ -100,7 +104,11 @@
                       </widget>
                      </item>
                      <item row="2" column="1">
-                      <widget class="QLineEdit" name="material_and_schedule"/>
+                      <widget class="QLineEdit" name="material_and_schedule">
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
                      </item>
                      <item row="2" column="0">
                       <widget class="QLabel" name="label_2">
@@ -123,6 +131,9 @@
                          <horstretch>0</horstretch>
                          <verstretch>0</verstretch>
                         </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string/>
                        </property>
                       </widget>
                      </item>
@@ -180,7 +191,7 @@
                    </sizepolicy>
                   </property>
                   <property name="currentIndex">
-                   <number>1</number>
+                   <number>0</number>
                   </property>
                   <widget class="QWidget" name="tab">
                    <attribute name="title">
@@ -210,10 +221,18 @@
                               </widget>
                              </item>
                              <item row="1" column="2">
-                              <widget class="QLineEdit" name="line_edit_source_h"/>
+                              <widget class="QLineEdit" name="line_edit_source_h">
+                               <property name="text">
+                                <string>1</string>
+                               </property>
+                              </widget>
                              </item>
                              <item row="0" column="0">
-                              <widget class="QLineEdit" name="line_edit_source_p"/>
+                              <widget class="QLineEdit" name="line_edit_source_p">
+                               <property name="text">
+                                <string>55</string>
+                               </property>
+                              </widget>
                              </item>
                              <item row="0" column="3">
                               <widget class="QLabel" name="label_14">
@@ -223,7 +242,11 @@
                               </widget>
                              </item>
                              <item row="1" column="0">
-                              <widget class="QLineEdit" name="line_edit_source_q"/>
+                              <widget class="QLineEdit" name="line_edit_source_q">
+                               <property name="text">
+                                <string>1574000</string>
+                               </property>
+                              </widget>
                              </item>
                              <item row="0" column="1">
                               <widget class="QLabel" name="label_13">
@@ -240,7 +263,11 @@
                               </widget>
                              </item>
                              <item row="0" column="2">
-                              <widget class="QLineEdit" name="line_edit_source_t"/>
+                              <widget class="QLineEdit" name="line_edit_source_t">
+                               <property name="text">
+                                <string>602</string>
+                               </property>
+                              </widget>
                              </item>
                             </layout>
                            </item>
@@ -263,7 +290,11 @@
                            <item>
                             <layout class="QGridLayout" name="gridLayout_3">
                              <item row="0" column="2">
-                              <widget class="QLineEdit" name="line_edit_destination_t"/>
+                              <widget class="QLineEdit" name="line_edit_destination_t">
+                               <property name="text">
+                                <string>600</string>
+                               </property>
+                              </widget>
                              </item>
                              <item row="0" column="1">
                               <widget class="QLabel" name="label_17">
@@ -273,7 +304,11 @@
                               </widget>
                              </item>
                              <item row="1" column="2">
-                              <widget class="QLineEdit" name="line_edit_destination_h"/>
+                              <widget class="QLineEdit" name="line_edit_destination_h">
+                               <property name="text">
+                                <string>1</string>
+                               </property>
+                              </widget>
                              </item>
                              <item row="0" column="3">
                               <widget class="QLabel" name="label_18">
@@ -283,7 +318,11 @@
                               </widget>
                              </item>
                              <item row="1" column="0">
-                              <widget class="QLineEdit" name="line_edit_destination_q"/>
+                              <widget class="QLineEdit" name="line_edit_destination_q">
+                               <property name="text">
+                                <string>1574000</string>
+                               </property>
+                              </widget>
                              </item>
                              <item row="1" column="3">
                               <widget class="QLabel" name="label_15">
@@ -293,7 +332,11 @@
                               </widget>
                              </item>
                              <item row="0" column="0">
-                              <widget class="QLineEdit" name="line_edit_destination_p"/>
+                              <widget class="QLineEdit" name="line_edit_destination_p">
+                               <property name="text">
+                                <string>53</string>
+                               </property>
+                              </widget>
                              </item>
                              <item row="1" column="1">
                               <widget class="QLabel" name="label_16">
@@ -1141,11 +1184,1589 @@
        <attribute name="title">
         <string>Wall Thickness</string>
        </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_15">
+        <item>
+         <widget class="QPushButton" name="button_wall_autofill">
+          <property name="text">
+           <string>Suggest Values from Pipe Sizing</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Pipe System Characteristics</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="4" column="2">
+            <widget class="QLabel" name="label_69">
+             <property name="text">
+              <string>Design Temperature (T)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_65">
+             <property name="text">
+              <string>BREI Pipe Classification</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="line_edit_applicable_pipes"/>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLabel" name="label_68">
+             <property name="text">
+              <string>Design Pressure (P)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_66">
+             <property name="text">
+              <string>ASTM Specification</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_67">
+             <property name="text">
+              <string>Fluid</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_63">
+             <property name="text">
+              <string>Pipeline Identification</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="line_edit_BREI"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="line_edit_pipeline_identification"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_64">
+             <property name="text">
+              <string>Applicable Pipe Sizes</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="3">
+            <widget class="QLineEdit" name="line_edit_design_temperature"/>
+           </item>
+           <item row="4" column="5">
+            <widget class="QLineEdit" name="line_edit_fahrenheit">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="4">
+            <widget class="QLabel" name="label_103">
+             <property name="text">
+              <string>C =</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="line_edit_ASTM"/>
+           </item>
+           <item row="4" column="6">
+            <widget class="QLabel" name="label_95">
+             <property name="text">
+              <string>F</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="6">
+            <widget class="QLabel" name="label_102">
+             <property name="text">
+              <string>bar (g)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3" colspan="3">
+            <widget class="QLineEdit" name="line_edit_design_pressure"/>
+           </item>
+           <item row="1" column="3" colspan="3">
+            <widget class="QLineEdit" name="line_edit_fluid"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="title">
+           <string>Formula for Minimum Wall Thickness</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="7" column="0" colspan="4">
+            <widget class="QLabel" name="label_78">
+             <property name="text">
+              <string>BEND = </string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="3">
+            <widget class="QLabel" name="label_74">
+             <property name="text">
+              <string>SE = </string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="8">
+            <widget class="QLineEdit" name="line_edit_Y"/>
+           </item>
+           <item row="5" column="9">
+            <widget class="QLabel" name="label_96">
+             <property name="text">
+              <string>mm</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="8">
+            <widget class="QLineEdit" name="line_edit_BEND">
+             <property name="text">
+              <string>1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6" colspan="2">
+            <widget class="QLabel" name="label_71">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resource.qrc">:/images/t_n.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="6">
+            <widget class="QLineEdit" name="line_edit_SE_ksi"/>
+           </item>
+           <item row="1" column="8">
+            <widget class="QLineEdit" name="line_edit_P_display">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="9">
+            <widget class="QLabel" name="label_92">
+             <property name="text">
+              <string>bar</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="8">
+            <widget class="QLineEdit" name="line_edit_MFG">
+             <property name="text">
+              <string>0.125</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QLabel" name="label_83">
+             <property name="text">
+              <string>Internal Diameter (mm)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="8">
+            <widget class="QLineEdit" name="line_edit_SE">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="8">
+            <widget class="QLineEdit" name="line_edit_A">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="4" colspan="4">
+            <widget class="QLabel" name="label_88">
+             <property name="text">
+              <string>Multipler for Additional Thickness for Bending Specified in B31.1 Table 102.4.5</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="label_70">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resource.qrc">:/images/t_m.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QLabel" name="label_82">
+             <property name="text">
+              <string>Internal Design Pressure</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="9">
+            <widget class="QLabel" name="label_93">
+             <property name="text">
+              <string>mm</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="9">
+            <widget class="QLabel" name="label_94">
+             <property name="text">
+              <string>bar</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="4">
+            <widget class="QLabel" name="label_73">
+             <property name="text">
+              <string>d = </string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="4">
+            <widget class="QLabel" name="label_72">
+             <property name="text">
+              <string>P = </string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="7">
+            <widget class="QLabel" name="label_97">
+             <property name="text">
+              <string>ksi =</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="4">
+            <widget class="QLabel" name="label_87">
+             <property name="text">
+              <string>Manufacturer's Wall Thickness Tolerance</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="4">
+            <widget class="QLabel" name="label_85">
+             <property name="text">
+              <string>Coefficient with Value Specified in B31.1 Table 104.1.2A</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0" colspan="3">
+            <widget class="QLabel" name="label_77">
+             <property name="text">
+              <string>MFG = </string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="3">
+            <widget class="QLabel" name="label_75">
+             <property name="text">
+              <string>Y = </string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="8">
+            <widget class="QLineEdit" name="line_edit_internal_diameter"/>
+           </item>
+           <item row="5" column="4" colspan="4">
+            <widget class="QLabel" name="label_86">
+             <property name="text">
+              <string>Additional Thickness Allowed for Corrosion, Erosion, and/or Mechanical Strength</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="3">
+            <widget class="QLabel" name="label_76">
+             <property name="text">
+              <string>A = </string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="4">
+            <widget class="QLabel" name="label_84">
+             <property name="text">
+              <string>Maximum Allowable Stress specified in B31.1 Appendix A</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="5">
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_wall_calculate">
+          <property name="text">
+           <string>Press to Calculate</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="title">
+           <string>Wall Thickness Results</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="4">
+            <widget class="QLabel" name="label_100">
+             <property name="text">
+              <string>mm</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_81">
+             <property name="text">
+              <string>OD = </string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QLineEdit" name="line_edit_OD">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+	background: rgb(85, 170, 255)
+}</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_80">
+             <property name="text">
+              <string>T_m = </string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_91">
+             <property name="text">
+              <string>Outer Diameter (mm)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QLabel" name="label_101">
+             <property name="text">
+              <string>mm</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QLabel" name="label_99">
+             <property name="text">
+              <string>mm</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_90">
+             <property name="text">
+              <string>Minimum Wall Thickness (mm)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_89">
+             <property name="text">
+              <string>Nominal Wall Thickness Required (mm)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLineEdit" name="line_edit_t_m">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+	background: rgb(85, 170, 255)
+}</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_79">
+             <property name="text">
+              <string>T_n = </string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QLineEdit" name="line_edit_t_n">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+	background: rgb(85, 170, 255)
+}</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_wall_excel">
+          <property name="text">
+           <string>Export to Excel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="pump_sizing">
        <attribute name="title">
         <string>Pump Sizing</string>
        </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_16">
+        <item>
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="title">
+           <string>Pump Information</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QLabel" name="label_98">
+               <property name="text">
+                <string>Service: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="line_edit_service"/>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QLabel" name="label_104">
+               <property name="text">
+                <string>Equipment Tag(s):</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="line_edit_equipment_tag"/>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLabel" name="label_105">
+               <property name="text">
+                <string>Location: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="line_edit_location"/>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="1">
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QLabel" name="label_106">
+               <property name="text">
+                <string>Quantity Required: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="line_edit_quantity_required"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_9">
+          <property name="title">
+           <string>Fluid Properties</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <layout class="QGridLayout" name="gridLayout_11">
+             <item row="1" column="7">
+              <widget class="QLabel" name="label_116">
+               <property name="text">
+                <string>C</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="5">
+              <widget class="QLabel" name="label_115">
+               <property name="text">
+                <string>(4) Pumping Temperature</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="5">
+              <widget class="QLabel" name="label_117">
+               <property name="text">
+                <string>(5) Vapor Pressure @ Temperature</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="label_241">
+               <property name="text">
+                <string>kg / hr</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="label_109">
+               <property name="text">
+                <string>(1) Pump Capacity</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLineEdit" name="line_edit_1">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5">
+              <widget class="QLabel" name="label_113">
+               <property name="text">
+                <string>(3) Fluid Pumped</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="6">
+              <widget class="QLineEdit" name="line_edit_4">
+               <property name="text">
+                <string>36</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="6">
+              <widget class="QLineEdit" name="line_edit_5">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QLabel" name="label_110">
+               <property name="text">
+                <string>m^3 / hr</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="7">
+              <widget class="QLabel" name="label_118">
+               <property name="text">
+                <string>bar (a)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="6">
+              <widget class="QLineEdit" name="line_edit_3">
+               <property name="text">
+                <string>Condensate Water</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLineEdit" name="line_edit_mass_flow_rate">
+               <property name="text">
+                <string>1411511</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="label_111">
+               <property name="text">
+                <string>(2) Margin for Capacity</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3">
+              <widget class="QLabel" name="label_112">
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLineEdit" name="line_edit_2">
+               <property name="text">
+                <string>10</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_107">
+               <property name="text">
+                <string>Mass Flow Rate</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4" rowspan="3">
+              <widget class="QPushButton" name="button_get_capacity">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Get Capacity</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_10">
+          <property name="title">
+           <string>Hydraulic Summary</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_43">
+           <item>
+            <layout class="QGridLayout" name="gridLayout_12">
+             <item row="3" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_8">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_10">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="6">
+              <widget class="QLabel" name="label_120">
+               <property name="font">
+                <font>
+                 <underline>true</underline>
+                </font>
+               </property>
+               <property name="text">
+                <string>SUCTION SIDE:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="0" colspan="3">
+              <widget class="QLabel" name="label_148">
+               <property name="text">
+                <string>(16) NPSHA in meter</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="0" colspan="3">
+              <widget class="QLabel" name="label_144">
+               <property name="text">
+                <string>(14) Total Suction Pressure</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_7">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="3">
+              <widget class="QLabel" name="label_114">
+               <property name="text">
+                <string>m = </string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_12">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="0" colspan="3">
+              <widget class="QLabel" name="label_146">
+               <property name="text">
+                <string>(15) NPSHA in bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_14">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_16">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_11">
+               <property name="text">
+                <string>0.05</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="5">
+              <widget class="QLabel" name="label_119">
+               <property name="text">
+                <string>bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="4">
+              <widget class="QLineEdit" name="line_edit_9">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="5">
+              <widget class="QLabel" name="label_149">
+               <property name="text">
+                <string>m</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0" colspan="3">
+              <widget class="QLabel" name="label_136">
+               <property name="text">
+                <string>(10) Equipment Loss</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0" colspan="2">
+              <widget class="QLabel" name="label_108">
+               <property name="text">
+                <string>(9) Static Head</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QLineEdit" name="line_edit_suction_static_head_m">
+               <property name="text">
+                <string>6</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="5">
+              <widget class="QLabel" name="label_141">
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0" colspan="3">
+              <widget class="QLabel" name="label_132">
+               <property name="text">
+                <string>(7) Specific Gravity @ Temperature</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="5">
+              <widget class="QLabel" name="label_135">
+               <property name="text">
+                <string>m / bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="5">
+              <widget class="QLabel" name="label_139">
+               <property name="text">
+                <string>bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_13">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0" colspan="3">
+              <widget class="QLabel" name="label_142">
+               <property name="text">
+                <string>(13) Total Piping Loss with Margin</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="5">
+              <widget class="QLabel" name="label_147">
+               <property name="text">
+                <string>bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="3">
+              <widget class="QLabel" name="label_121">
+               <property name="text">
+                <string>(6) Terminal Pressure</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="5">
+              <widget class="QLabel" name="label_123">
+               <property name="text">
+                <string>bar (a)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="5">
+              <widget class="QLabel" name="label_137">
+               <property name="text">
+                <string>bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0" colspan="3">
+              <widget class="QLabel" name="label_138">
+               <property name="text">
+                <string>(11) Piping Friction Loss</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0" colspan="3">
+              <widget class="QLabel" name="label_140">
+               <property name="text">
+                <string>(12) Margin for Piping Loss</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="5">
+              <widget class="QLabel" name="label_145">
+               <property name="text">
+                <string>bar (a)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="3">
+              <widget class="QLabel" name="label_134">
+               <property name="text">
+                <string>(8) Meter of Fluid Head</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_15">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="5">
+              <widget class="QLabel" name="label_143">
+               <property name="text">
+                <string>bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_6">
+               <property name="text">
+                <string>14</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_15">
+             <item row="1" column="0" colspan="3">
+              <widget class="QLabel" name="label_212">
+               <property name="text">
+                <string>(17) Terminal Pressure</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_25">
+               <property name="text">
+                <string>3</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="5">
+              <widget class="QLabel" name="label_217">
+               <property name="text">
+                <string>m / bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="0" colspan="3">
+              <widget class="QLabel" name="label_221">
+               <property name="text">
+                <string>(27) Total Discharge Pressure</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0" colspan="3">
+              <widget class="QLabel" name="label_203">
+               <property name="text">
+                <string>(18) Specific Gravity @ Temperature</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0" colspan="3">
+              <widget class="QLabel" name="label_220">
+               <property name="text">
+                <string>(21) Equipment Loss</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_22">
+               <property name="text">
+                <string>5</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="5">
+              <widget class="QLabel" name="label_206">
+               <property name="text">
+                <string>bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_21">
+               <property name="text">
+                <string>15</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="5">
+              <widget class="QLabel" name="label_198">
+               <property name="text">
+                <string>bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QLineEdit" name="line_edit_discharge_static_head_m">
+               <property name="text">
+                <string>30</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_23">
+               <property name="text">
+                <string>10</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="5">
+              <widget class="QLabel" name="label_200">
+               <property name="text">
+                <string>bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="6">
+              <widget class="QLabel" name="label_205">
+               <property name="font">
+                <font>
+                 <underline>true</underline>
+                </font>
+               </property>
+               <property name="text">
+                <string>DISCHARGE SIDE:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="5">
+              <widget class="QLabel" name="label_210">
+               <property name="text">
+                <string>bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="5">
+              <widget class="QLabel" name="label_211">
+               <property name="text">
+                <string>bar (a)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="5">
+              <widget class="QLabel" name="label_201">
+               <property name="text">
+                <string>bar (a)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0" colspan="3">
+              <widget class="QLabel" name="label_215">
+               <property name="text">
+                <string>(24) Total Piping Loss with Margin</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="5">
+              <widget class="QLabel" name="label_209">
+               <property name="text">
+                <string>bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="0" colspan="3">
+              <widget class="QLabel" name="label_216">
+               <property name="text">
+                <string>(26) Pump Wear</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0" colspan="2">
+              <widget class="QLabel" name="label_218">
+               <property name="text">
+                <string>(20) Static Head</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="0" colspan="3">
+              <widget class="QLabel" name="label_219">
+               <property name="text">
+                <string>(25) Control Valve Loss (Confirm with I&amp;C)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="5">
+              <widget class="QLabel" name="label_214">
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="3">
+              <widget class="QLabel" name="label_213">
+               <property name="text">
+                <string>(19) Meter of Fluid Head</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="3">
+              <widget class="QLabel" name="label_199">
+               <property name="text">
+                <string>m =</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_24">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="4">
+              <widget class="QLineEdit" name="line_edit_20">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_19">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_26">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="5">
+              <widget class="QLabel" name="label_208">
+               <property name="text">
+                <string>bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0" colspan="3">
+              <widget class="QLabel" name="label_202">
+               <property name="text">
+                <string>(23) Margin for PIping Loss</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0" colspan="3">
+              <widget class="QLabel" name="label_204">
+               <property name="text">
+                <string>(22) Piping Friction Loss</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_27">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_18">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3" colspan="2">
+              <widget class="QLineEdit" name="line_edit_17">
+               <property name="text">
+                <string>15</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_hydraulics">
+          <property name="text">
+           <string>Calculate Hydraulics</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_11">
+          <property name="title">
+           <string>Design Conditions</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_44">
+           <item>
+            <layout class="QGridLayout" name="gridLayout_16">
+             <item row="2" column="3">
+              <widget class="QLabel" name="label_233">
+               <property name="text">
+                <string>(35) Suction Design Temperature</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QLabel" name="label_236">
+               <property name="text">
+                <string>(34) Suction Design Pressure</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_228">
+               <property name="text">
+                <string>(32) User Specified Pump Efficiency</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_223">
+               <property name="text">
+                <string>(29) Total Head (TH or TDH)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QLabel" name="label_230">
+               <property name="text">
+                <string>m</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
+              <widget class="QLabel" name="label_231">
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="4">
+              <widget class="QLineEdit" name="line_edit_37"/>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLabel" name="label_224">
+               <property name="text">
+                <string>m</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="3">
+              <widget class="QLabel" name="label_133">
+               <property name="font">
+                <font>
+                 <underline>true</underline>
+                </font>
+               </property>
+               <property name="text">
+                <string>PUMP:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="line_edit_32">
+               <property name="text">
+                <string>100</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="line_edit_28">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="4">
+              <widget class="QLineEdit" name="line_edit_36"/>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_227">
+               <property name="text">
+                <string>(31) Design NPSHA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="label_229">
+               <property name="text">
+                <string>(33) Pump Power</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="4">
+              <widget class="QLineEdit" name="line_edit_35"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_207">
+               <property name="text">
+                <string>(28) Total Differential Pressure</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="4">
+              <widget class="QLineEdit" name="line_edit_34"/>
+             </item>
+             <item row="6" column="1">
+              <widget class="QLineEdit" name="line_edit_33">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_225">
+               <property name="text">
+                <string>(30) Design Capacity</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="2">
+              <widget class="QLabel" name="label_232">
+               <property name="text">
+                <string>kW</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLabel" name="label_222">
+               <property name="text">
+                <string>bar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="line_edit_29">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="line_edit_30">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="line_edit_31">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	background: rgb(223, 223, 223)
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="3">
+              <widget class="QLabel" name="label_237">
+               <property name="text">
+                <string>(36) User-Specified Shut-off Head</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QLabel" name="label_226">
+               <property name="text">
+                <string>m^3 / hr</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="3">
+              <widget class="QLabel" name="label_240">
+               <property name="text">
+                <string>(37) Discharge Design Pressure</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="5">
+              <widget class="QLabel" name="label_238">
+               <property name="text">
+                <string>bar (g)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="5">
+              <widget class="QLabel" name="label_234">
+               <property name="text">
+                <string>C</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="5">
+              <widget class="QLabel" name="label_239">
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="5">
+              <widget class="QLabel" name="label_243">
+               <property name="text">
+                <string>bar (g)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3" colspan="3">
+              <widget class="QLabel" name="label_235">
+               <property name="font">
+                <font>
+                 <underline>true</underline>
+                </font>
+               </property>
+               <property name="text">
+                <string>PIPING:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_design_conditions">
+          <property name="text">
+           <string>Get Design Conditions</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
      </widget>
     </item>
@@ -1156,7 +2777,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1010</width>
+     <width>1092</width>
      <height>19</height>
     </rect>
    </property>

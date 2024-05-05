@@ -8,6 +8,7 @@ dependencies:
   - openpyxl
   - ipykernel
   - pyside6
+  - pyinstaller
   - pip:
       - numpy
       - pandas
@@ -17,3 +18,4 @@ dependencies:
       - sigfig
       - pillow
       - pyqt6-tools 
+      - pyqtdarktheme

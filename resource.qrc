@@ -1,5 +1,9 @@
 <RCC>
   <qresource>
+    <file>images/t_m.png</file>
+    <file>images/t_n.png</file>
+    <file>tables/template.xlsx</file>
+    <file>output_tables/pipe_pressure.xlsx</file>
     <file>images/bar.png</file>
     <file>images/delta_P.png</file>
     <file>images/f_laminar.png</file>

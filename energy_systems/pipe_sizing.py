@@ -64,7 +64,7 @@ def pressure_drop(p_avg, t_avg, q, d, epsilon, fitting_resistance, L_p, static_h
 def pipe_to_excel(data_dict, fittings):
     data = pd.DataFrame(data_dict.items(), columns=['Name', 'Value'])
 
-    book = load_workbook('tables/template.xlsx')
+    book = load_workbook('tables/pipe_pressure_template.xlsx')
 
     # Check if the sheet exists and remove it
     if 'data' in book.sheetnames:
@@ -80,3 +80,42 @@ def pipe_to_excel(data_dict, fittings):
 
     with pd.ExcelWriter('output_tables/pipe_pressure.xlsx', engine='openpyxl', mode='a') as writer:
         fittings.to_excel(writer, sheet_name='fittings', index=False)
+
+def wall_thickness(P, T, d, SE, Y, A=0, MFG=1, BEND=0):
+    T_m = (P * d) / (2 * (SE + P*Y - P))
+    T_n = T_m /(1 - MFG) * BEND
+    OD = d + 2 * T_m
+    data_dict = {
+        "P": P,
+        "T": T,
+        "d": d,
+        "SE": SE,
+        "Y": Y,
+        "A": A,
+        "MFG": MFG,
+        "BEND": BEND,
+        "T_m": T_m,
+        "T_n": T_n,
+        "OD": OD
+    }
+    return data_dict
+
+def wall_to_excel(data_dict):
+    data = pd.DataFrame(data_dict.items(), columns=['Name', 'Value'])
+
+    book = load_workbook('tables/wall_thickness_template.xlsx')
+
+    # Check if the sheet exists and remove it
+    if 'data' in book.sheetnames:
+        del book['data']
+
+    book.save('output_tables/wall_thickness.xlsx')
+
+    with pd.ExcelWriter('output_tables/wall_thickness.xlsx', engine='openpyxl', mode='a') as writer:
+        data.to_excel(writer, sheet_name='data', index=False)
+
+def to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def to_bar(ksi):
+    return ksi * 68.9476

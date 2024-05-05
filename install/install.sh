@@ -1,0 +1,1 @@
+pyinstaller --onefile --noconsole --name energy_systems --exclude-module "PyQt6" --hidden-import openpyxl.cell._writer ../main.py
